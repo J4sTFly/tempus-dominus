@@ -1,11 +1,13 @@
-///<reference src="js/tempus-dominus"/>
+/// <reference path="tempus-dominus"/>
 /*global $, tempusDominus */
 
 /*!
  * Tempus Dominus v6.7.16 (https://getdatepicker.com/)
  * Copyright 2013-2021 Jonathan Peterson
  * Licensed under MIT (https://github.com/Eonasdan/tempus-dominus/blob/master/LICENSE)
- */
+*/
+import { tempusDominus } from "./tempus-dominus.esm";
+
 tempusDominus.jQueryInterface = function (option, argument) {
   if (this.length === 1) {
     return tempusDominus.jQueryHandleThis(this, option, argument);

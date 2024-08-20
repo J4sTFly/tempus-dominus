@@ -659,6 +659,7 @@ const tempusDominus = {
 };
 
 export {
+  tempusDominus,
   TempusDominus,
   extend,
   loadLocale,
