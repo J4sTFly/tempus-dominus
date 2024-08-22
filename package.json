@@ -111,5 +111,8 @@
       "test/fixtures/**/*"
     ]
   },
-  "funding": "https://ko-fi.com/eonasdan"
+  "funding": "https://ko-fi.com/eonasdan",
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
 }

@@ -7,6 +7,7 @@ const banner = require('./banner.js');
 
 const globals = {
   '@popperjs/core': 'Popper',
+  'moment': 'moment'
 };
 
 export default [
@@ -63,6 +64,22 @@ export default [
       },
     ],
     plugins: [terser()],
+  },
+  {
+    input: 'src/js/plugins/moment-parse/index.ts',
+    output: [
+      {
+        file: 'dist/js/plugins/moment_parse.js'
+      }
+    ],
+    external: ['moment'],
+    plugins: [
+      typescript({
+        tsconfig: (resolvedConfig) => ({
+          ...resolvedConfig,
+        }),
+      }),
+    ],
   },
   {
     input: 'src/scss/tempus-dominus.scss',
